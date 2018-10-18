@@ -1,0 +1,30 @@
+{
+  "name": "ng-barn",
+  "version": "1.0.0",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tantaroth/ng-barn.git"
+  },
+  "author": {
+    "email": "hello@tantaroth.com",
+    "name": "Eduard Ramirez",
+    "url": "https://about.me/tantaroth"
+  },
+  "main": "bundles/ng-barn.umd.js",
+  "module": "fesm5/ng-barn.js",
+  "es2015": "fesm2015/ng-barn.js",
+  "esm5": "esm5/ng-barn.js",
+  "esm2015": "esm2015/ng-barn.js",
+  "fesm5": "fesm5/ng-barn.js",
+  "fesm2015": "fesm2015/ng-barn.js",
+  "typings": "ng-barn.d.ts",
+  "metadata": "ng-barn.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
