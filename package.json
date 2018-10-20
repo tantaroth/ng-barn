@@ -1,6 +1,7 @@
 {
   "name": "ng-barn",
-  "version": "1.0.2",
+  "description": "Es una librería básica creada para Angular 2+, inspirada en Redux para el manejo de datos.",
+  "version": "1.0.4",
   "peerDependencies": {
     "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
     "@angular/core": "^6.0.0-rc.0 || ^6.0.0"

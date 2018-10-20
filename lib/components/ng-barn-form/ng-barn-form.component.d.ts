@@ -1,6 +1,6 @@
 import { OnInit, EventEmitter } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { NgBarnService } from '../../ng-barn.service';
+import { StoreService } from '../../store.service';
 export declare class NgBarnFormComponent implements OnInit {
     private store;
     private saved;
@@ -12,7 +12,7 @@ export declare class NgBarnFormComponent implements OnInit {
     submitted: EventEmitter<boolean>;
     beforeUnloadHander(event: any): void;
     onKeydownHandler(event: KeyboardEvent): void;
-    constructor(store: NgBarnService);
+    constructor(store: StoreService);
     ngOnInit(): void;
     onSubmit(index: any): void;
 }
