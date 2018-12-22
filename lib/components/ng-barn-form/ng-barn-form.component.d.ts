@@ -1,6 +1,6 @@
-import { OnInit, EventEmitter } from '@angular/core';
-import { FormGroup } from '@angular/forms';
-import { StoreService } from '../../store.service';
+import { OnInit, EventEmitter } from "@angular/core";
+import { FormGroup } from "@angular/forms";
+import { StoreService } from "../../store.service";
 export declare class NgBarnFormComponent implements OnInit {
     private store;
     private saved;
@@ -8,7 +8,7 @@ export declare class NgBarnFormComponent implements OnInit {
     index: number;
     formGroup: FormGroup;
     guardSave: boolean;
-    submitting: EventEmitter<any[]>;
+    submitting: EventEmitter<object>;
     submitted: EventEmitter<boolean>;
     beforeUnloadHander(event: any): void;
     onKeydownHandler(event: KeyboardEvent): void;

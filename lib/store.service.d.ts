@@ -1,4 +1,4 @@
-import { Config } from './models/config';
+import { Config } from "./models/config";
 export declare class StoreService {
     private config;
     private key;
