@@ -95,7 +95,7 @@
          */
             function (data, key) {
                 /** @type {?} */
-                var frozenList = JSON.parse(JSON.stringify(this.store[key || this.key]));
+                var frozenList = this.store[key || this.key];
                 this.store[key || this.key] = data;
                 /** @type {?} */
                 var response = this.store[key || this.key];
@@ -119,7 +119,7 @@
          */
             function (data, key) {
                 /** @type {?} */
-                var frozenList = JSON.parse(JSON.stringify(this.store[key || this.key]));
+                var frozenList = this.store[key || this.key];
                 this.store[key || this.key].push(data);
                 /** @type {?} */
                 var index = this.store[key || this.key].length - 1;
@@ -153,7 +153,7 @@
          */
             function (index, data, key) {
                 /** @type {?} */
-                var frozenList = JSON.parse(JSON.stringify(this.store[key || this.key]));
+                var frozenList = this.store[key || this.key];
                 this.store[key || this.key][index] = __assign({}, this.store[key || this.key][index], data);
                 /** @type {?} */
                 var response = this.store[key || this.key];
@@ -183,7 +183,7 @@
          */
             function (index, key) {
                 /** @type {?} */
-                var frozenList = JSON.parse(JSON.stringify(this.store[key || this.key]));
+                var frozenList = this.store[key || this.key];
                 this.store[key || this.key].splice(index, 1);
                 /** @type {?} */
                 var response = this.store[key || this.key];

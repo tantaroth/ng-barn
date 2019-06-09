@@ -51,7 +51,7 @@ class StoreService {
      */
     set(data, key) {
         /** @type {?} */
-        const frozenList = JSON.parse(JSON.stringify(this.store[key || this.key]));
+        const frozenList = this.store[key || this.key];
         this.store[key || this.key] = data;
         /** @type {?} */
         const response = this.store[key || this.key];
@@ -70,7 +70,7 @@ class StoreService {
      */
     push(data, key) {
         /** @type {?} */
-        const frozenList = JSON.parse(JSON.stringify(this.store[key || this.key]));
+        const frozenList = this.store[key || this.key];
         this.store[key || this.key].push(data);
         /** @type {?} */
         const index = this.store[key || this.key].length - 1;
@@ -98,7 +98,7 @@ class StoreService {
      */
     update(index, data, key) {
         /** @type {?} */
-        const frozenList = JSON.parse(JSON.stringify(this.store[key || this.key]));
+        const frozenList = this.store[key || this.key];
         this.store[key || this.key][index] = Object.assign({}, this.store[key || this.key][index], data);
         /** @type {?} */
         const response = this.store[key || this.key];
@@ -123,7 +123,7 @@ class StoreService {
      */
     delete(index, key) {
         /** @type {?} */
-        const frozenList = JSON.parse(JSON.stringify(this.store[key || this.key]));
+        const frozenList = this.store[key || this.key];
         this.store[key || this.key].splice(index, 1);
         /** @type {?} */
         const response = this.store[key || this.key];
